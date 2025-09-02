@@ -10,4 +10,12 @@ Resource    ./pages/Register.resource
 Resource    ./pages/Transfer.resource
 Resource    Variables.resource
 
+*** Variables ***
+${URL}    https://bugbank.netlify.app/
+
 *** Keywords ***
+
+Open site
+    New Browser    headless=False
+    New Page    ${URL}
+

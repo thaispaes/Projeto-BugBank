@@ -1,0 +1,56 @@
+{"level":30,"time":"2025-09-02T18:31:34.550Z","pid":25928,"hostname":"ThaisPaes","msg":"Listening on 127.0.0.1:61629"}
+(node:25928) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-09-02T18:31:34.915Z","pid":25928,"hostname":"ThaisPaes","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-09-02T18:31:36.166Z","pid":25928,"hostname":"ThaisPaes","msg":"Adding browser to stack: chromium, version: 138.0.7204.23"}
+{"level":30,"time":"2025-09-02T18:31:36.167Z","pid":25928,"hostname":"ThaisPaes","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-09-02T18:31:36.167Z","pid":25928,"hostname":"ThaisPaes","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-09-02T18:31:36.177Z","pid":25928,"hostname":"ThaisPaes","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-09-02T18:31:36.178Z","pid":25928,"hostname":"ThaisPaes","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-09-02T18:31:36.202Z","pid":25928,"hostname":"ThaisPaes","msg":"Changed active context"}
+{"level":30,"time":"2025-09-02T18:31:36.366Z","pid":25928,"hostname":"ThaisPaes","msg":"Video path: undefined"}
+{"level":30,"time":"2025-09-02T18:31:36.366Z","pid":25928,"hostname":"ThaisPaes","msg":"Changed active page"}
+{"level":30,"time":"2025-09-02T18:31:37.262Z","pid":25928,"hostname":"ThaisPaes","msg":"End of node method newPage"}
+{"level":30,"time":"2025-09-02T18:31:37.271Z","pid":25928,"hostname":"ThaisPaes","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-02T18:31:37.272Z","pid":25928,"hostname":"ThaisPaes","msg":"Strict mode is enabled, find Locator with css=button:has-text(\"Registrar\") in page."}
+{"level":30,"time":"2025-09-02T18:31:37.350Z","pid":25928,"hostname":"ThaisPaes","msg":"End of node method click"}
+{"level":30,"time":"2025-09-02T18:31:42.362Z","pid":25928,"hostname":"ThaisPaes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-02T18:31:42.362Z","pid":25928,"hostname":"ThaisPaes","msg":"Strict mode is enabled, find Locator with xpath=//div[@class='card__register']//input[@type='email' and @placeholder='Informe seu e-mail'] in page."}
+{"level":30,"time":"2025-09-02T18:31:42.376Z","pid":25928,"hostname":"ThaisPaes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-09-02T18:31:42.380Z","pid":25928,"hostname":"ThaisPaes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-02T18:31:42.380Z","pid":25928,"hostname":"ThaisPaes","msg":"Strict mode is enabled, find Locator with css=input[type=\"name\"] in page."}
+{"level":30,"time":"2025-09-02T18:31:42.390Z","pid":25928,"hostname":"ThaisPaes","msg":"End of node method fillText"}
+{"level":30,"time":"2025-09-02T18:31:42.394Z","pid":25928,"hostname":"ThaisPaes","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-02T18:31:42.394Z","pid":25928,"hostname":"ThaisPaes","msg":"Strict mode is enabled, find Locator with css=//div[@class='card__register']//input[@type=\"password\" and @placeholder=\"Informe sua senha\"] in page."}
+{"level":30,"time":"2025-09-02T18:31:42.397Z","pid":25928,"hostname":"ThaisPaes","msg":"Error of node method  fillText"}
+================= Original suppressed error =================
+locator.fill: Unsupported token "@class" while parsing css selector "//div[@class='card__register']//input[@type="password" and @placeholder="Informe sua senha"]". Did you mean to CSS.escape it?
+Call log:
+[2m  - waiting for css=//div[@class='card__register']//input[@type="password" and @placeholder="Informe sua senha"][22m
+
+    at fillText (C:\Users\thais\anaconda3\envs\projects-robotframework\Lib\site-packages\Browser\wrapper\index.js:11850:17)
+    at async PlaywrightServer.fillText (C:\Users\thais\anaconda3\envs\projects-robotframework\Lib\site-packages\Browser\wrapper\index.js:13135:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2025-09-02T18:31:42.401Z","pid":25928,"hostname":"ThaisPaes","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-09-02T18:31:42.401Z","pid":25928,"hostname":"ThaisPaes","Take screenshot with options: ":{"path":"D:\\codigos\\GitHub\\projeto-bugbank\\results\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-09-02T18:31:42.548Z","pid":25928,"hostname":"ThaisPaes","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-09-02T18:31:42.582Z","pid":25928,"hostname":"ThaisPaes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-02T18:31:42.585Z","pid":25928,"hostname":"ThaisPaes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-02T18:31:42.587Z","pid":25928,"hostname":"ThaisPaes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-02T18:31:42.588Z","pid":25928,"hostname":"ThaisPaes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-02T18:31:42.590Z","pid":25928,"hostname":"ThaisPaes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-02T18:31:42.591Z","pid":25928,"hostname":"ThaisPaes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-02T18:31:42.594Z","pid":25928,"hostname":"ThaisPaes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-02T18:31:42.595Z","pid":25928,"hostname":"ThaisPaes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-02T18:31:42.598Z","pid":25928,"hostname":"ThaisPaes","msg":"Changed active context"}
+{"level":30,"time":"2025-09-02T18:31:42.598Z","pid":25928,"hostname":"ThaisPaes","msg":"Changing current active page: page=d473d319-d1ee-4f20-9a75-90e2bcbe774a"}
+{"level":30,"time":"2025-09-02T18:31:42.598Z","pid":25928,"hostname":"ThaisPaes","msg":"Changed active page"}
+{"level":30,"time":"2025-09-02T18:31:42.602Z","pid":25928,"hostname":"ThaisPaes","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-09-02T18:31:42.612Z","pid":25928,"hostname":"ThaisPaes","msg":"Removed page=613f4a1a-2cf5-441f-b89e-127da80fc9b4 from context=bb632aeb-d0a7-4e06-ae72-6749d7f9cd25 page stack"}
+{"level":30,"time":"2025-09-02T18:31:42.632Z","pid":25928,"hostname":"ThaisPaes","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-09-02T18:31:42.644Z","pid":25928,"hostname":"ThaisPaes","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-02T18:31:42.644Z","pid":25928,"hostname":"ThaisPaes","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-02T18:31:43.373Z","pid":25928,"hostname":"ThaisPaes","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-09-02T18:31:43.526Z","pid":25928,"hostname":"ThaisPaes","msg":"End of node method closeAllBrowsers"}
