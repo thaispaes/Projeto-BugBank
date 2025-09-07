@@ -6,6 +6,7 @@ Resource    ../resources/Base.resource
 Suite Setup    Generate data for registration
 
 Test Setup    Open site
+Test Teardown    Take Screenshot
 
 
 *** Test Cases ***

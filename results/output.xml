@@ -1,189 +1,260 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-09-02T15:31:32.929527" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-09-02T16:40:52.418690" rpa="false" schemaversion="5">
 <suite id="s1" name="Projeto-Bugbank" source="D:\codigos\GitHub\projeto-bugbank">
 <suite id="s1-s1" name="Tests" source="D:\codigos\GitHub\projeto-bugbank\tests">
 <suite id="s1-s1-s1" name="Register" source="D:\codigos\GitHub\projeto-bugbank\tests\register.robot">
 <kw name="Generate data for registration" owner="Variables" type="SETUP">
 <kw name="Name" owner="FakerLibrary">
-<msg time="2025-09-02T15:31:33.796750" level="INFO">${NAME} = Phillip Stanton</msg>
+<msg time="2025-09-02T16:40:53.419314" level="INFO">${NAME} = Cathy White</msg>
 <var>${NAME}</var>
 <doc>:example: 'John Doe'</doc>
-<status status="PASS" start="2025-09-02T15:31:33.795960" elapsed="0.001122"/>
+<status status="PASS" start="2025-09-02T16:40:53.418549" elapsed="0.000938"/>
 </kw>
 <kw name="Email" owner="FakerLibrary">
-<msg time="2025-09-02T15:31:33.797833" level="INFO">${EMAIL} = efox@example.org</msg>
+<msg time="2025-09-02T16:40:53.420557" level="INFO">${EMAIL} = gjohnson@example.org</msg>
 <var>${EMAIL}</var>
-<status status="PASS" start="2025-09-02T15:31:33.797286" elapsed="0.000735"/>
+<status status="PASS" start="2025-09-02T16:40:53.419694" elapsed="0.001118"/>
 </kw>
 <kw name="Password" owner="FakerLibrary">
-<msg time="2025-09-02T15:31:33.798673" level="INFO">${PASSWORD} = +31!2Adt0X</msg>
+<msg time="2025-09-02T16:40:53.421640" level="INFO">${PASSWORD} = y0ZbERcL&amp;2</msg>
 <var>${PASSWORD}</var>
 <doc>Generate a random password of the specified ``length``.</doc>
-<status status="PASS" start="2025-09-02T15:31:33.798188" elapsed="0.000588"/>
+<status status="PASS" start="2025-09-02T16:40:53.421031" elapsed="0.000798"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2025-09-02T15:31:33.799792" level="INFO">${NAME} = Phillip Stanton</msg>
+<msg time="2025-09-02T16:40:53.422860" level="INFO">${NAME} = Cathy White</msg>
 <arg>${NAME}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2025-09-02T15:31:33.799319" elapsed="0.000594"/>
+<status status="PASS" start="2025-09-02T16:40:53.422385" elapsed="0.000663"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2025-09-02T15:31:33.800584" level="INFO">${EMAIL} = efox@example.org</msg>
+<msg time="2025-09-02T16:40:53.423674" level="INFO">${EMAIL} = gjohnson@example.org</msg>
 <arg>${EMAIL}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2025-09-02T15:31:33.800110" elapsed="0.000667"/>
+<status status="PASS" start="2025-09-02T16:40:53.423221" elapsed="0.000578"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2025-09-02T15:31:33.801385" level="INFO">${PASSWORD} = +31!2Adt0X</msg>
+<msg time="2025-09-02T16:40:53.424405" level="INFO">${PASSWORD} = y0ZbERcL&amp;2</msg>
 <arg>${PASSWORD}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2025-09-02T15:31:33.800953" elapsed="0.000551"/>
+<status status="PASS" start="2025-09-02T16:40:53.423964" elapsed="0.000636"/>
 </kw>
-<status status="PASS" start="2025-09-02T15:31:33.794923" elapsed="0.006716"/>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-09-02T16:40:53.425228" level="INFO">${PASSWORD_CONFIRMATION} = y0ZbERcL&amp;2</msg>
+<arg>${PASSWORD_CONFIRMATION}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-09-02T16:40:53.424777" elapsed="0.000601"/>
 </kw>
-<test id="s1-s1-s1-t1" name="Register in application with success" line="12">
+<status status="PASS" start="2025-09-02T16:40:53.417583" elapsed="0.007940"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Register in application with success" line="13">
 <kw name="Open site" owner="Base" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-09-02T15:31:33.810925" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\codigos\\GitHub\\projeto-bugbank\\results\\browser\\traces\\temp\\762f7c15-042c-4516-9fb1-4eba42159cd5"}</msg>
-<msg time="2025-09-02T15:31:33.876602" level="INFO">Starting Browser process C:\Users\thais\anaconda3\envs\projects-robotframework\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:61629</msg>
-<msg time="2025-09-02T15:31:36.170936" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\codigos\\GitHub\\projeto-bugbank\\results\\browser\\traces\\temp\\762f7c15-042c-4516-9fb1-4eba42159cd5"}</msg>
+<msg time="2025-09-02T16:40:53.430828" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\codigos\\GitHub\\projeto-bugbank\\results\\browser\\traces\\temp\\a40b8270-2f62-400c-a1c9-a43701aa0ef0"}</msg>
+<msg time="2025-09-02T16:40:53.589999" level="INFO">Starting Browser process C:\Users\thais\anaconda3\envs\projects-robotframework\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:61557</msg>
+<msg time="2025-09-02T16:40:57.517699" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\codigos\\GitHub\\projeto-bugbank\\results\\browser\\traces\\temp\\a40b8270-2f62-400c-a1c9-a43701aa0ef0"}</msg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-09-02T15:31:33.810026" elapsed="2.361727"/>
+<status status="PASS" start="2025-09-02T16:40:53.429935" elapsed="4.088898"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-09-02T15:31:37.264897" level="INFO">Successfully initialized new page object and opened url: https://bugbank.netlify.app/</msg>
-<msg time="2025-09-02T15:31:37.265136" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-09-02T16:40:58.565873" level="INFO">Successfully initialized new page object and opened url: https://bugbank.netlify.app/</msg>
+<msg time="2025-09-02T16:40:58.566340" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-09-02T15:31:36.172500" elapsed="1.092894"/>
+<status status="PASS" start="2025-09-02T16:40:57.519367" elapsed="1.047335"/>
 </kw>
-<status status="PASS" start="2025-09-02T15:31:33.809379" elapsed="3.456224"/>
+<status status="PASS" start="2025-09-02T16:40:53.429320" elapsed="5.137603"/>
 </kw>
 <kw name="Given Access to register page" owner="Register">
 <kw name="Click" owner="Browser">
-<msg time="2025-09-02T15:31:37.270107" level="INFO">Clicks the element 'css=button:has-text("Registrar")'.</msg>
+<msg time="2025-09-02T16:40:58.572524" level="INFO">Clicks the element 'css=button:has-text("Registrar")'.</msg>
 <arg>css=button:has-text("Registrar")</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-09-02T15:31:37.269117" elapsed="0.083191"/>
+<status status="PASS" start="2025-09-02T16:40:58.571370" elapsed="0.065439"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-02T15:31:42.353833" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-09-02T16:41:03.638170" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-02T15:31:37.352603" elapsed="5.001551"/>
+<status status="PASS" start="2025-09-02T16:40:58.637235" elapsed="5.001465"/>
 </kw>
-<status status="PASS" start="2025-09-02T15:31:37.266052" elapsed="5.088316"/>
+<status status="PASS" start="2025-09-02T16:40:58.567919" elapsed="5.071035"/>
 </kw>
 <kw name="When Fill registration form with valid data" owner="Register">
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-09-02T15:31:42.360788" level="INFO">Fills the text 'efox@example.org' in the given field.</msg>
+<msg time="2025-09-02T16:41:03.644813" level="INFO">Fills the text 'gjohnson@example.org' in the given field.</msg>
 <arg>xpath=//div[@class='card__register']//input[@type='email' and @placeholder='Informe seu e-mail']</arg>
 <arg>${EMAIL}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-09-02T15:31:42.360068" elapsed="0.017679"/>
+<status status="PASS" start="2025-09-02T16:41:03.644073" elapsed="0.017386"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-09-02T15:31:42.379187" level="INFO">Fills the text 'Phillip Stanton' in the given field.</msg>
+<msg time="2025-09-02T16:41:03.663028" level="INFO">Fills the text 'Cathy White' in the given field.</msg>
 <arg>css=input[type="name"]</arg>
 <arg>${NAME}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-09-02T15:31:42.378087" elapsed="0.014452"/>
+<status status="PASS" start="2025-09-02T16:41:03.661851" elapsed="0.019285"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-09-02T15:31:42.393690" level="INFO">Fills the text '+31!2Adt0X' in the given field.</msg>
-<msg time="2025-09-02T15:31:42.550303" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2025-09-02T15:31:42.550577" level="INFO">See also file:///D:/codigos/GitHub/projeto-bugbank/results/playwright-log.txt for additional details.</msg>
-<msg time="2025-09-02T15:31:42.551107" level="FAIL">Error: locator.fill: Unsupported token "@class" while parsing css selector "//div[@class='card__register']//input[@type="password" and @placeholder="Informe sua senha"]". Did you mean to CSS.escape it?
-Call log:
-  - waiting for css=//div[@class='card__register']//input[@type="password" and @placeholder="Informe sua senha"]
-</msg>
-<arg>css=//div[@class='card__register']//input[@type="password" and @placeholder="Informe sua senha"]</arg>
+<msg time="2025-09-02T16:41:03.682586" level="INFO">Fills the text 'y0ZbERcL&amp;2' in the given field.</msg>
+<arg>xpath=//div[@class='card__register']//input[@type="password" and @placeholder="Informe sua senha"]</arg>
 <arg>${PASSWORD}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="FAIL" start="2025-09-02T15:31:42.392844" elapsed="0.168011">Error: locator.fill: Unsupported token "@class" while parsing css selector "//div[@class='card__register']//input[@type="password" and @placeholder="Informe sua senha"]". Did you mean to CSS.escape it?
-Call log:
-  - waiting for css=//div[@class='card__register']//input[@type="password" and @placeholder="Informe sua senha"]
-</status>
+<status status="PASS" start="2025-09-02T16:41:03.681479" elapsed="0.014395"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<arg>css=//input[@type="password" and @placeholder="Informe a confirmação da senha"]</arg>
+<msg time="2025-09-02T16:41:03.697355" level="INFO">Fills the text 'y0ZbERcL&amp;2' in the given field.</msg>
+<arg>xpath=//input[@type="password" and @placeholder="Informe a confirmação da senha"]</arg>
 <arg>${PASSWORD_CONFIRMATION}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-09-02T15:31:42.561175" elapsed="0.000345"/>
+<status status="PASS" start="2025-09-02T16:41:03.696349" elapsed="0.013221"/>
 </kw>
 <if>
 <branch type="IF" condition="${WITH_BALANCE} == True">
 <kw name="Click" owner="Browser">
+<msg time="2025-09-02T16:41:03.711629" level="INFO">Clicks the element 'id=toggleAddBalance'.</msg>
 <arg>id=toggleAddBalance</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-09-02T15:31:42.562207" elapsed="0.000270"/>
+<status status="PASS" start="2025-09-02T16:41:03.710913" elapsed="0.035318"/>
 </kw>
 <kw name="Click" owner="Browser">
-<arg>css=button[type="submit" and text="Cadastrar"]</arg>
+<msg time="2025-09-02T16:41:03.747353" level="INFO">Clicks the element 'css=button:has-text("Cadastrar")'.</msg>
+<arg>css=button:has-text("Cadastrar")</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-09-02T15:31:42.562645" elapsed="0.000268"/>
+<status status="PASS" start="2025-09-02T16:41:03.746541" elapsed="0.046314"/>
 </kw>
-<status status="NOT RUN" start="2025-09-02T15:31:42.561839" elapsed="0.001180"/>
+<status status="PASS" start="2025-09-02T16:41:03.710020" elapsed="0.083203"/>
 </branch>
 <branch type="ELSE">
 <kw name="Click" owner="Browser">
-<arg>css=button[type="submit" and text="Cadastrar"]</arg>
+<arg>css=button:has-text("Cadastrar")</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-09-02T15:31:42.563404" elapsed="0.000264"/>
+<status status="NOT RUN" start="2025-09-02T16:41:03.793946" elapsed="0.000372"/>
 </kw>
-<status status="NOT RUN" start="2025-09-02T15:31:42.563088" elapsed="0.000685"/>
+<status status="NOT RUN" start="2025-09-02T16:41:03.793336" elapsed="0.001119"/>
 </branch>
-<status status="NOT RUN" start="2025-09-02T15:31:42.561797" elapsed="0.002027"/>
+<status status="PASS" start="2025-09-02T16:41:03.709947" elapsed="0.084567"/>
 </if>
 <arg>${NAME}</arg>
 <arg>${EMAIL}</arg>
 <arg>${PASSWORD}</arg>
 <arg>${PASSWORD_CONFIRMATION}</arg>
 <arg>${WITH_BALANCE}</arg>
-<status status="FAIL" start="2025-09-02T15:31:42.357453" elapsed="0.206504">Error: locator.fill: Unsupported token "@class" while parsing css selector "//div[@class='card__register']//input[@type="password" and @placeholder="Informe sua senha"]". Did you mean to CSS.escape it?
-Call log:
-  - waiting for css=//div[@class='card__register']//input[@type="password" and @placeholder="Informe sua senha"]
-</status>
+<status status="PASS" start="2025-09-02T16:41:03.641577" elapsed="0.153055"/>
 </kw>
 <kw name="Then Registration success message is displayed" owner="Register">
-<status status="NOT RUN" start="2025-09-02T15:31:42.566039" elapsed="0.001810"/>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-02T16:41:03.808442" level="INFO">Waited for Element with selector id=modalText at state visible</msg>
+<arg>id=modalText</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-02T16:41:03.800113" elapsed="0.008789"/>
 </kw>
-<msg time="2025-09-02T15:31:42.593660" level="INFO">Switching context to context=bb632aeb-d0a7-4e06-ae72-6749d7f9cd25 in CURRENT</msg>
-<msg time="2025-09-02T15:31:42.601818" level="INFO">Successfully changed active context: context=bb632aeb-d0a7-4e06-ae72-6749d7f9cd25</msg>
-<msg time="2025-09-02T15:31:42.633591" level="INFO">Successfully closed Context</msg>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-09-02T16:41:03.833620" level="INFO">Text: 'A conta 326-6 foi criada com sucesso'</msg>
+<msg time="2025-09-02T16:41:03.833941" level="INFO">${message} = A conta 326-6 foi criada com sucesso</msg>
+<var>${message}</var>
+<arg>id=modalText</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-02T16:41:03.809291" elapsed="0.024763"/>
+</kw>
+<kw name="Validate message in modal in success registration" owner="Register">
+<kw name="Should Match Regexp" owner="BuiltIn">
+<arg>${message}</arg>
+<arg>A conta (.+) foi criada com sucesso</arg>
+<doc>Fails if ``string`` does not match ``pattern`` as a regular expression.</doc>
+<status status="PASS" start="2025-09-02T16:41:03.835315" elapsed="0.000746"/>
+</kw>
+<kw name="Extract account number from success message" owner="Register">
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2025-09-02T16:41:03.837464" level="INFO">${account_number} = []</msg>
+<var>${account_number}</var>
+<arg>${message}</arg>
+<arg>A conta (\d+-\d+) foi criada com sucesso</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2025-09-02T16:41:03.836940" elapsed="0.000666"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Fail" owner="BuiltIn">
+<msg time="2025-09-02T16:41:03.838866" level="FAIL">Número da conta não encontrado!</msg>
+<arg>Número da conta não encontrado!</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="FAIL" start="2025-09-02T16:41:03.838347" elapsed="0.006560">Número da conta não encontrado!</status>
+</kw>
+<arg>${account_number}</arg>
+<arg>Set Global Variable</arg>
+<arg>${ACCOUNT_NUMBER}</arg>
+<arg>${account_number[0]}</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>Número da conta não encontrado!</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="FAIL" start="2025-09-02T16:41:03.837782" elapsed="0.007393">Número da conta não encontrado!</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Número da conta extraído: ${ACCOUNT_NUMBER}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-09-02T16:41:03.845530" elapsed="0.000526"/>
+</kw>
+<arg>${message}</arg>
+<status status="FAIL" start="2025-09-02T16:41:03.836389" elapsed="0.009928">Número da conta não encontrado!</status>
+</kw>
+<arg>${message}</arg>
+<status status="FAIL" start="2025-09-02T16:41:03.834405" elapsed="0.012140">Número da conta não encontrado!</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-09-02T16:41:03.846771" elapsed="0.000362"/>
+</kw>
+<status status="FAIL" start="2025-09-02T16:41:03.796960" elapsed="0.050379">Número da conta não encontrado!</status>
+</kw>
+<kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
+<msg time="2025-09-02T16:41:03.980139" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-02T16:41:03.850217" elapsed="0.130425"/>
+</kw>
+<msg time="2025-09-02T16:41:04.013042" level="INFO">Switching context to context=f45787ed-7c95-4026-a97e-f63d396e2bce in CURRENT</msg>
+<msg time="2025-09-02T16:41:04.021443" level="INFO">Successfully changed active context: context=f45787ed-7c95-4026-a97e-f63d396e2bce</msg>
+<msg time="2025-09-02T16:41:04.072749" level="INFO">Successfully closed Context</msg>
 <doc>Validar o cadastro na aplicação com sucesso</doc>
-<status status="FAIL" start="2025-09-02T15:31:33.801761" elapsed="8.767898">Error: locator.fill: Unsupported token "@class" while parsing css selector "//div[@class='card__register']//input[@type="password" and @placeholder="Informe sua senha"]". Did you mean to CSS.escape it?
-Call log:
-  - waiting for css=//div[@class='card__register']//input[@type="password" and @placeholder="Informe sua senha"]
-</status>
+<status status="FAIL" start="2025-09-02T16:40:53.425645" elapsed="10.555312">Número da conta não encontrado!</status>
 </test>
 <doc>Arquivo de Caso de testes relacionado a funcionalidade de Cadastro na aplicação</doc>
-<status status="FAIL" start="2025-09-02T15:31:32.972745" elapsed="9.662719"/>
+<status status="FAIL" start="2025-09-02T16:40:52.470691" elapsed="11.605488"/>
 </suite>
-<status status="FAIL" start="2025-09-02T15:31:32.967328" elapsed="9.678766"/>
+<status status="FAIL" start="2025-09-02T16:40:52.466255" elapsed="11.639698"/>
 </suite>
-<status status="FAIL" start="2025-09-02T15:31:32.936205" elapsed="9.713966"/>
+<status status="FAIL" start="2025-09-02T16:40:52.425904" elapsed="11.685063"/>
 </suite>
 <statistics>
 <total>
@@ -198,9 +269,9 @@ Call log:
 </suite>
 </statistics>
 <errors>
-<msg time="2025-09-02T15:31:33.246211" level="WARN">Imported resource file 'D:\codigos\GitHub\projeto-bugbank\resources\pages\Extract.resource' is empty.</msg>
-<msg time="2025-09-02T15:31:33.251512" level="WARN">Imported resource file 'D:\codigos\GitHub\projeto-bugbank\resources\pages\Home.resource' is empty.</msg>
-<msg time="2025-09-02T15:31:33.256421" level="WARN">Imported resource file 'D:\codigos\GitHub\projeto-bugbank\resources\pages\Login.resource' is empty.</msg>
-<msg time="2025-09-02T15:31:33.285711" level="WARN">Imported resource file 'D:\codigos\GitHub\projeto-bugbank\resources\pages\Transfer.resource' is empty.</msg>
+<msg time="2025-09-02T16:40:52.829167" level="WARN">Imported resource file 'D:\codigos\GitHub\projeto-bugbank\resources\pages\Extract.resource' is empty.</msg>
+<msg time="2025-09-02T16:40:52.834085" level="WARN">Imported resource file 'D:\codigos\GitHub\projeto-bugbank\resources\pages\Home.resource' is empty.</msg>
+<msg time="2025-09-02T16:40:52.837872" level="WARN">Imported resource file 'D:\codigos\GitHub\projeto-bugbank\resources\pages\Login.resource' is empty.</msg>
+<msg time="2025-09-02T16:40:52.871883" level="WARN">Imported resource file 'D:\codigos\GitHub\projeto-bugbank\resources\pages\Transfer.resource' is empty.</msg>
 </errors>
 </robot>

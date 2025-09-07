@@ -7,9 +7,10 @@ Library    FakerLibrary
 ${NAME}
 ${EMAIL}
 ${PASSWORD}
-${PASSWORD_CONFIRMATION}    =    ${PASSWORD}
-${WITH_BALANCE}    =    True
+${PASSWORD_CONFIRMATION}
+${WITH_BALANCE}=    True
 ${ACCOUNT_NUMBER}
+
 
 
 *** Keywords ***
@@ -20,3 +21,4 @@ Generate data for registration
     Set Suite Variable    ${NAME}
     Set Suite Variable    ${EMAIL}
     Set Suite Variable    ${PASSWORD}
+    Set Suite Variable    ${PASSWORD_CONFIRMATION}    ${PASSWORD}
